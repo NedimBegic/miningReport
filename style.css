@@ -1,0 +1,148 @@
+*{
+    box-sizing: border-box;
+}
+
+header{
+    width: 100vw;
+    height: 4em;
+    border-bottom: 1px solid black;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.info *{
+    margin: .2em;
+}
+.description{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.timeKol{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.timeInfo{
+    display: flex;
+    flex-direction: column;
+}
+
+.setTime{
+    width: 4em;
+}
+
+table, th, td{
+    border: 1px solid black;
+}
+
+.numberIn{
+    width: 10%;
+    text-align: center;
+    vertical-align: middle;
+
+}
+
+.textIn{
+    text-align: inherit;
+    padding: .3em;
+}
+
+.timeIn{
+    width:10%;
+    text-align: center;
+    vertical-align: middle;
+
+}
+
+table{
+    width: 80%;
+    height: auto;
+    margin-top: 2em;
+}
+
+td input{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+}
+td{
+    height: auto;
+}
+input{
+    width: 100%;
+    height: 100%;
+}
+.noBorder{
+    border: none;
+}
+
+input[type="time"]::-webkit-calendar-picker-indicator {
+    background: none;
+    display: none;
+}
+
+/* Section where the photo is added */
+
+.addPhoto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 2em;
+}
+
+.addPhoto *{
+    margin: .3em;
+}
+
+.dodaj{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#dodajSliku{
+    position: relative;
+    left:3em;
+}
+
+/* Lista slika sa opisima */
+
+.lista{
+    width: 80%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items:center ;
+}
+
+#ovde{
+    width: 80%;
+    height: 50%;
+    
+}
+
+.prilogNaslov{
+    font-weight: bolder;
+    margin:.5em;
+}
+
+#prilog{
+    width: 80%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#ovdeText{
+    margin:.4em;
+}

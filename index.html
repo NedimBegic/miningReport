@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+
+    <title>Report</title>
+</head>
+
+<body>
+    <header></header>
+    <main>
+        <div class="info">
+            <div class="description">
+                <label>Opis:</label>
+                <textarea id="opis1" cols="30" rows="5"></textarea>
+            </div>
+            <div class="timeKol">
+                <div class="timeInfo">
+                    <label>Vrijeme</label>
+                    <input id="time1" class="setTime" type="time">
+                </div>
+                <div class="timeInfo">
+                    <label>Količina</label>
+                    <input id="kol1" class="setTime" type="number">
+                </div>
+            </div>
+        </div>
+        <button id="button1">Dodaj u tabelu</button>
+        <table id="table1">
+            <tr>
+                <th>Sat</th>
+                <th>Opis</th>
+                <th >Kol.</th>
+            </tr>
+
+        </table>
+        <section class="addPhoto">
+            <h2>Dodaj sliku</h2>
+            <div class="dodaj">
+                <input id="dodajSliku" type="file" accept="image/png, image/jpg">
+                <textarea name="" id="dodajTekst" cols="30" rows="5"></textarea>
+                <button id="buttonImage">Dodaj opis</button>
+            </div>
+        </section>
+        <article class="lista">
+        </article>
+    </main>
+<script src="main.js"></script>
+</body>
+
+</html>
