@@ -9,7 +9,12 @@ if(arrTable !== null) {
     for(let i = 0; i<arrTable.length;i++) {
         table1.innerHTML += `
         <tr>
-        <td class="timeIn"><input class="noBorder" type="time" value=${arrTable[i].time1}></td>
+        <td class="timeIn">
+        <div class="twoInputs">
+        <input class="noBorder" type="time" value=${arrTable[i].time1}>-
+        <input class="noBorder" type="time" value=${arrTable[i].time2}>
+        </div>
+        </td>
         <td class="textIn" contenteditable="true">${arrTable[i].opis1}</td>
         <td class="numberIn" contenteditable="true">${arrTable[i].kol1}</td>
     </tr>
@@ -26,7 +31,7 @@ button1.addEventListener('click', () => {
     let time1 = document.getElementById('time1').value;
     let time2 = document.getElementById('time2').value
     let kol1 = document.getElementById('kol1').value;
-    tableArr.push({opis1, time1,time2, kol1});
+    tableArr.push({opis1, time1, time2, kol1});
     localStorage.setItem('tableArr', JSON.stringify(tableArr));
     // putting in localStorage
    
@@ -35,8 +40,10 @@ button1.addEventListener('click', () => {
     table1.innerHTML += `
     <tr>
     <td class="timeIn">
-    <input class="noBorder" type="time" value=${arrTable[arrTable.length-1].time1}>
+    <div class="twoInputs">
+    <input class="noBorder" type="time" value=${arrTable[arrTable.length-1].time1}>-
     <input class="noBorder" type="time" value=${arrTable[arrTable.length-1].time2}>
+    </div>
     </td>
     <td class="textIn" contenteditable="true">${arrTable[arrTable.length-1].opis1}</td>
     <td class="numberIn" contenteditable="true">${arrTable[arrTable.length-1].kol1}</td>
@@ -45,6 +52,7 @@ button1.addEventListener('click', () => {
     // clear after submit
     document.getElementById('opis1').value = '';
     document.getElementById('time1').value = '';
+    document.getElementById('time2').value = '';
     document.getElementById('kol1').value = '';
     
 })
