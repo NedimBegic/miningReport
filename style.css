@@ -2,12 +2,12 @@
     box-sizing: border-box;
 }
 
-header{
-    width: 100vw;
-    height: 4em;
-    border-bottom: 1px solid black;
+.logo{
+    width: 100%;
+    height: 8em;
+    position: relative;
+    left: 8%;
 }
-
 main{
     display: flex;
     flex-direction: column;
@@ -30,18 +30,46 @@ main{
     justify-content: space-evenly;
 }
 .timeInfo{
+    width: 35%;
     display: flex;
     flex-direction: column;
 }
 
 .setTime{
-    width: 4em;
+    width: 70%;
 }
 
+.setKol{
+    width: 70%;
+    height: 2em;
+}
+.timeInput{
+    display: flex;
+}
+/* ----------tabela */
 table, th, td{
     border: 1px solid black;
 }
 
+.smjenski{
+    width: 100%;
+    height: 3em;
+    border: 2px solid black;
+    background-color: #f2f2f2;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: bold;
+    font-size: 95%;
+}
+
+.kojaSmjena{
+    padding-left: 1%;
+}
+
+.datum{
+    padding-right: 2%;
+}
 .numberIn{
     width: 10%;
     text-align: center;
@@ -50,8 +78,9 @@ table, th, td{
 }
 
 .textIn{
-    text-align: inherit;
+    text-align: center;
     padding: .3em;
+
 }
 
 .timeIn{
@@ -62,11 +91,28 @@ table, th, td{
 }
 
 table{
-    width: 80%;
+    width: 100%;
     height: auto;
-    margin-top: 2em;
+    margin-top: 0em;
+    border: 2px solid black;
 }
 
+th{
+    height: 2.5em;
+    vertical-align: middle;
+    background-color: #c5d9f1;
+    font-weight: bold;
+}
+
+.horiz{
+    vertical-align: text-bottom;
+}
+
+.gore{
+    width: 100%;
+    height: 50%;
+    border-bottom: 1px solid black;
+}
 td input{
     display: flex;
     flex-direction: column;
@@ -96,6 +142,7 @@ input[type="time"]::-webkit-calendar-picker-indicator {
     flex-direction: column;
     align-items: center;
     margin: 2em;
+    width: 80%;
 }
 
 .addPhoto *{
@@ -103,14 +150,19 @@ input[type="time"]::-webkit-calendar-picker-indicator {
 }
 
 .dodaj{
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
 #dodajSliku{
-    position: relative;
-    left:3em;
+    background-color: green;
+    width: 50%;
+}
+
+#dodajTekst{
+    width: 80%;
 }
 
 /* Lista slika sa opisima */
@@ -149,4 +201,8 @@ input[type="time"]::-webkit-calendar-picker-indicator {
 
 #ovdeText{
     margin:.4em;
+}
+
+.hidden{
+    display:none;
 }

@@ -12,7 +12,7 @@
 </head>
 
 <body>
-    <header></header>
+    <img class="logo" src="logoAdriatic.png" alt="">
     <main>
         <div class="info">
             <div class="description">
@@ -21,25 +21,36 @@
             </div>
             <div class="timeKol">
                 <div class="timeInfo">
-                    <label>Vrijeme</label>
-                    <input id="time1" class="setTime" type="time">
+                    <div class="timeInput">
+                        <label>Od:</label>
+                        <input id="time1" class="setTime" type="time">
+                    </div>
+                    <div class="timeInput">
+                        <label>Do:</label>
+                        <input id="time2" class="seTtime" type="time">
+                    </div>
                 </div>
                 <div class="timeInfo">
                     <label>Količina</label>
-                    <input id="kol1" class="setTime" type="number">
+                    <input id="kol1" class="setKol" type="number">
                 </div>
             </div>
         </div>
         <button id="button1">Dodaj u tabelu</button>
         <table id="table1">
+            <div class="smjenski">
+                <h1 contenteditable="true" class="kojaSmjena">SMJENA I</h1>
+                <h1>SMJENSKI IZVJEŠTAJ</h1>
+                <h1 class="datum">22.11.2022</h1>
+            </div>
             <tr>
-                <th>Sat</th>
-                <th>Opis</th>
-                <th >Kol.</th>
+                <th>VRIJEME</th>
+                <th>OPERACIJA - GTN - 1</th>
+                <th class="horis"><div class="gore"></div><h1 >KOLIČINE</h1></th>
             </tr>
 
         </table>
-        <section class="addPhoto">
+      <!--   <section class="addPhoto">
             <h2 class="naslovDodavanja">Dodaj sliku</h2>
             <div class="dodaj">
                 <input id="dodajSliku" type="file" accept="image/png, image/jpg">
@@ -48,9 +59,13 @@
             </div>
         </section>
         <article class="lista">
-        </article>
+        </article> -->
+        <div id="buttons">
+            <button id="pdf">Skini PDF</button>
+        </div>
     </main>
 <script src="main.js"></script>
+<script src="html2PDF.js"></script>
 </body>
 
 </html>
