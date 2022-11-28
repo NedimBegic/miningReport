@@ -4,21 +4,38 @@ let button1 = document.getElementById('button1');
 
 // add tables
 let table1 = document.getElementById('table1');
+let arrTable = JSON.parse(localStorage.getItem('tableArr')) || [];
+if(arrTable !== null) {
+    for(let i = 0; i<arrTable.length;i++) {
+        table1.innerHTML += `
+        <tr>
+        <td class="timeIn"><input class="noBorder" type="time" value=${arrTable[i].time1}></td>
+        <td class="textIn" contenteditable="true">${arrTable[i].opis1}</td>
+        <td class="numberIn" contenteditable="true">${arrTable[i].kol1}</td>
+    </tr>
+        `
+    }
+}
 
-
-
+let tableArr = arrTable;
+console.log(tableArr)
 // add evenet to button 
-
 button1.addEventListener('click', () => {
     // info for table 1 
     let opis1 = document.getElementById('opis1').value;
     let time1 = document.getElementById('time1').value;
     let kol1 = document.getElementById('kol1').value;
+    tableArr.push({opis1, time1, kol1});
+    localStorage.setItem('tableArr', JSON.stringify(tableArr));
+    // putting in localStorage
+   
+    console.log(JSON.parse(localStorage.getItem('tableArr')))
+    console.log(arrTable)
     table1.innerHTML += `
     <tr>
-    <td class="timeIn"><input class="noBorder" type="time" value=${time1}></td>
-    <td class="textIn" contenteditable="true">${opis1}</td>
-    <td class="numberIn" contenteditable="true">${kol1}</td>
+    <td class="timeIn"><input class="noBorder" type="time" value=${arrTable[arrTable.length-1].time1}></td>
+    <td class="textIn" contenteditable="true">${arrTable[arrTable.length-1].opis1}</td>
+    <td class="numberIn" contenteditable="true">${arrTable[arrTable.length-1].kol1}</td>
 </tr>
     `
     // clear after submit
@@ -77,8 +94,6 @@ buttonImage.addEventListener('click', () => {
     // delete content from text 
     document.getElementById('dodajTekst').value = ''
 })
-
-
 
 
 

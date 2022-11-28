@@ -129,6 +129,10 @@ input[type="time"]::-webkit-calendar-picker-indicator {
     
 }
 
+.naslovDodavanja{
+    font-weight: bolder;
+}
+
 .prilogNaslov{
     font-weight: bolder;
     margin:.5em;
