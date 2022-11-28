@@ -46,6 +46,14 @@ main{
 .timeInput{
     display: flex;
 }
+
+.divButtons{
+    width: 10em;
+    height: 3em;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1em;
+}
 /* ----------tabela */
 table, th, td{
     border: 1px solid black;

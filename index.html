@@ -31,12 +31,15 @@
                     </div>
                 </div>
                 <div class="timeInfo">
-                    <label>Količina</label>
+                    <label>Kol - S.č.</label>
                     <input id="kol1" class="setKol" type="text">
                 </div>
             </div>
         </div>
-        <button id="button1">Dodaj u tabelu</button>
+        <div class="divButtons">
+            <button id="button1">GTN - 1</button>
+            <button id="button2">GTN - 2</button>
+        </div>
         <table id="table1">
             <div class="smjenski">
                 <h1 contenteditable="true" class="kojaSmjena">SMJENA I</h1>
@@ -46,17 +49,20 @@
             <tr>
                 <th>VRIJEME</th>
                 <th class="operacija">OPERACIJA - GTN - 1</th>
-                <th class="horis"><div class="gore"></div><h1 >KOLIČINE</h1></th>
+                <th class="horis">
+                    <div class="gore"></div>
+                    <h1>KOLIČINE</h1>
+                </th>
             </tr>
         </table>
-        <table>
+        <table id="table2">
             <tr>
                 <th>VRIJEME</th>
-                <th class="operacija">OPERACIJA - GTN - 1</th>
+                <th class="operacija">OPERACIJA - GTN - 2</th>
                 <th>Stacionaža čela</th>
             </tr>
         </table>
-      <!--   <section class="addPhoto">
+        <!--   <section class="addPhoto">
             <h2 class="naslovDodavanja">Dodaj sliku</h2>
             <div class="dodaj">
                 <input id="dodajSliku" type="file" accept="image/png, image/jpg">
@@ -70,8 +76,8 @@
             <button id="pdf">Skini PDF</button>
         </div>
     </main>
-<script src="main.js"></script>
-<script src="html2PDF.js"></script>
+    <script src="main.js"></script>
+    <script src="html2PDF.js"></script>
 </body>
 
 </html>

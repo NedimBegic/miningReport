@@ -1,12 +1,16 @@
-
 // buttons
 let button1 = document.getElementById('button1');
+let button2 = document.getElementById('button2');
 
 // render tables from localStorage 
 let table1 = document.getElementById('table1');
+let table2 = document.getElementById('table2');
+
+// the arrays that holds data from localStorage
 let arrTable = JSON.parse(localStorage.getItem('tableArr')) || [];
-if(arrTable !== null) {
-    for(let i = 0; i<arrTable.length;i++) {
+let arrTable2 = JSON.parse(localStorage.getItem('tableArr2')) || [];
+// rendering tables on refresh
+for(let i = 0; i<arrTable.length;i++) {
         table1.innerHTML += `
         <tr>
         <td class="timeIn">
@@ -19,12 +23,26 @@ if(arrTable !== null) {
         <td class="numberIn" contenteditable="true">${arrTable[i].kol1}</td>
     </tr>
         `
-    }
 }
 
+
+for(let i = 0;i<arrTable2.length;i++) {
+    table2.innerHTML += `
+    <tr>
+    <td class="timeIn">
+    <div class="twoInputs">
+    <input class="noBorder" type="time" value=${arrTable2[i].time1}>-
+    <input class="noBorder" type="time" value=${arrTable2[i].time2}>
+    </div>
+    </td>
+    <td class="textIn" contenteditable="true">${arrTable2[i].opis1}</td>
+    <td class="numberIn" contenteditable="true">${arrTable2[i].kol1}</td>
+</tr>
+    `
+}
+// array for data on first table
 let tableArr = arrTable;
-console.log(tableArr)
-// add evenet to button 
+// add evenet to button1
 button1.addEventListener('click', () => {
     // info for table 1 
     let opis1 = document.getElementById('opis1').value;
@@ -32,11 +50,9 @@ button1.addEventListener('click', () => {
     let time2 = document.getElementById('time2').value
     let kol1 = document.getElementById('kol1').value;
     tableArr.push({opis1, time1, time2, kol1});
+    // puting it in localStorage
     localStorage.setItem('tableArr', JSON.stringify(tableArr));
-    // putting in localStorage
    
-    console.log(JSON.parse(localStorage.getItem('tableArr')))
-    console.log(arrTable)
     table1.innerHTML += `
     <tr>
     <td class="timeIn">
@@ -55,6 +71,36 @@ button1.addEventListener('click', () => {
     document.getElementById('time2').value = '';
     document.getElementById('kol1').value = '';
     
+})
+// array for daty on secont table
+let tableArr2 = arrTable2;
+// add event for button2
+button2.addEventListener('click', () => {
+     // info for table 2
+     let opis1 = document.getElementById('opis1').value;
+     let time1 = document.getElementById('time1').value;
+     let time2 = document.getElementById('time2').value
+     let kol1 = document.getElementById('kol1').value;
+     tableArr2.push({opis1, time1, time2, kol1});
+     localStorage.setItem('tableArr2', JSON.stringify(tableArr2));
+
+     table2.innerHTML += `
+    <tr>
+    <td class="timeIn">
+    <div class="twoInputs">
+    <input class="noBorder" type="time" value=${arrTable2[arrTable2.length-1].time1}>-
+    <input class="noBorder" type="time" value=${arrTable2[arrTable2.length-1].time2}>
+    </div>
+    </td>
+    <td class="textIn" contenteditable="true">${arrTable2[arrTable2.length-1].opis1}</td>
+    <td class="numberIn" contenteditable="true">${arrTable2[arrTable2.length-1].kol1}</td>
+</tr>
+    `
+    // clear after submit
+    document.getElementById('opis1').value = '';
+    document.getElementById('time1').value = '';
+    document.getElementById('time2').value = '';
+    document.getElementById('kol1').value = '';
 })
 
 
