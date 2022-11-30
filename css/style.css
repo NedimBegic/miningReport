@@ -90,6 +90,7 @@ select{
 }
 
 .snimi{
+    margin:1em;
     width: 50%;
     background-image: linear-gradient(rgb(48, 200, 48),green);
 }
