@@ -406,10 +406,6 @@ input[type="time"]::-webkit-calendar-picker-indicator {
 
 }
 
-/* napomene */
-#dodajNapomenu {
-    margin: 1em;
-}
 
 .hidden {
     display: none;
@@ -431,6 +427,10 @@ input[type="time"]::-webkit-calendar-picker-indicator {
         position: fixed;
         top: 0;
     }
+    .listaNapomena{
+        page-break-before: always;
+    }
+      
 }
 
 

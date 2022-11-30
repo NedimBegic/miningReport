@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/info.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/notes.css">
 
     <title>Report</title>
 </head>
@@ -44,7 +45,7 @@
                 <option value="druga">16:00-00:00</option>
                 <option value="treca">00:00-08:00</option>
             </select>
-            <button class="snimi">Snimi</button>
+            <button class="snimi">Dodaj</button>
         </div>
         <div class="info tabelaDiv hidden">
             <div class="description">
@@ -75,7 +76,7 @@
 
         <div class="info napomeneDiv hidden">
             <textarea id="napomena" cols="30" rows="5"></textarea>
-            <button class="snimi">Snimi</button>
+            <button id="dodajNapomenu" class="snimi">Dodaj</button>
         </div>
         <div class="info slikeDiv hidden">
             <input type="file">
@@ -125,7 +126,7 @@
             </tr>
         </table>
         <div contenteditable="true" class="betweenTable"></div>
-        <table>
+        <table id="eks">
             <div class="smjenski eksplozivna">EKSPLOZIVNA SREDSTVA</div>
             <tr class="sameWidth">
                 <th>DYNEX φ 38</th>
@@ -201,9 +202,13 @@
             <h1 class="yellow">ODNOSI SE NA GTN1</h1>
             <h1 class="red">ODNOSI SE NA GTN2</h1>
         </div>
+        <article class="listaNapomena">
+            <div class="divNapomene">Napomene:</div>
+        </article>
     </main>
     <script src="js/info.js"></script>
     <script src="js/main.js"></script>
+    <script src="js/notes.js"></script>
 </body>
 
 </html>

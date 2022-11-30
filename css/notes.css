@@ -1,0 +1,28 @@
+/* napomene */
+#dodajNapomenu {
+    margin: 1em;
+}
+
+.listaNapomena{
+    width: 90%;
+}
+
+.divNapomene{
+    font-weight: bold;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:#0075aa;
+    color: aliceblue;
+    font-size: 190%;
+    border-radius: 10px;
+    margin: 0;
+    margin-bottom: .5em;
+
+}
+.note{
+    margin-bottom: .9em;
+    
+
+}
