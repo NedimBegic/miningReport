@@ -6,16 +6,16 @@ var yyyy = today.getFullYear();
 
 today = mm + '.' + dd + '.' + yyyy;
 // putting date and shift in table
-document.querySelector('.datum').textContent = today;
-let smjena = document.getElementById('smjena').value;
+/* document.querySelector('.datum').textContent = today;
+ */let smjena = document.getElementById('smjena').value;
 let shift = "";
 if(smjena == "prva"){
     shift = "I";
 }else if (smjena == "druga"){
     shift = "II"
 }
-document.querySelector('.kojaSmjena').textContent += shift;
-// the buttons for different info
+/* document.querySelector('.kojaSmjena').textContent += shift;
+ */// the buttons for different info
 let podaci = document.getElementById('podaci');
 let tabele = document.getElementById('tabele');
 let napomene = document.getElementById('napomene');

@@ -66,13 +66,13 @@
                     <label>Kol - S.č.</label>
                     <input id="kol1" class="setKol" type="text">
                 </div>
-            </div> 
+            </div>
             <div class="divButtons">
                 <button id="button1">GTN - 1</button>
                 <button id="button2">GTN - 2</button>
             </div>
         </div>
-        
+
         <div class="info napomeneDiv hidden">
             <textarea id="napomena" cols="30" rows="5"></textarea>
             <button class="snimi">Snimi</button>
@@ -81,27 +81,47 @@
             <input type="file">
             <button class="snimi">Dodaj</button>
         </div>
+        <h2 class="smjenskiIzvjestaj">Smjenski izvještaj</h2>
         <!-- Tabele -->
         <table id="table1">
-            <div class="smjenski">
-                <h1 contenteditable="true" class="kojaSmjena">SMJENA </h1>
-                <h1>SMJENSKI IZVJEŠTAJ</h1>
-                <h1 contenteditable="true" class="datum"></h1>
-            </div>
-            <tr>
-                <th>VRIJEME</th>
-                <th class="operacija">OPERACIJA - GTN - 1</th>
-                <th class="horis">
-                    <div class="gore"></div>
-                    <h1>KOLIČINE</h1>
+            <tr class="bigger">
+                <th class="radiliste">Radilište</th>
+                <th>
+                    <div class="gtn1">GTN-1</div>
+
+                    <div class="stacDiv">
+                        <div>Stac. čelo: 0+181.60</div>
+                        <div class="line"></div>
+                        <div> Stac. ventilacija: 0+128 m</div>
+                    </div>
+
                 </th>
+                <th class="noBorderBotton">Utrošak</th>
+            </tr>
+            <tr class="smaller">
+                <th class="vrijemeNas smaller">Vrijeme (h)</th>
+                <th class="operacija smaller">Radna operacija:</th>
+                <th class="noBorderTop smaller wordBreak">materijala</th>
             </tr>
         </table>
         <table id="table2">
-            <tr>
-                <th>VRIJEME</th>
-                <th class="operacija">OPERACIJA - GTN - 2</th>
-                <th>Stacionaža čela</th>
+            <tr class="bigger">
+                <th class="radiliste">Radilište</th>
+                <th>
+                    <div class="gtn1">GTN-2</div>
+
+                    <div class="stacDiv">
+                        <div>Stac. čelo: 0+281.50</div>
+                        <div class="line"></div>
+                        <div> Stac. ventilacija: 0+237 m</div>
+                    </div>
+                </th>
+                <th class="noBorderBotton">Utrošak</th>
+            </tr>
+            <tr class="smaller">
+                <th class="vrijemeNas smaller">Vrijeme (h)</th>
+                <th class="operacija smaller">Radna operacija:</th>
+                <th class="noBorderTop smaller wordBreak">materijala</th>
             </tr>
         </table>
         <div contenteditable="true" class="betweenTable"></div>
@@ -168,7 +188,7 @@
                 <th>I</th>
                 <th>kg</th>
             </tr>
-            <tr contenteditable="true" >
+            <tr contenteditable="true">
                 <th class="sameWhite">0</th>
                 <th class="sameWhite">0</th>
                 <th class="sameWhite">0</th>
