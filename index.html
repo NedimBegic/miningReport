@@ -5,16 +5,48 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/info.css">
+    <link rel="stylesheet" href="css/style.css">
 
     <title>Report</title>
 </head>
 
 <body>
-    <img class="logo" src="logoAdriatic.png" alt="">
     <main>
-        <div class="info">
+        <header>
+            <img class="logo" src="images/logoAdriatic.png" alt="">
+        </header>
+        <!-- Odabir unosa podataka -->
+        <section id="buttonDiv">
+            <button id="podaci">Podaci</button>
+            <button id="tabele">Tabele</button>
+            <button id="napomene">Napomene</button>
+            <button id="slike">Slike</button>
+        </section>
+        <!-- Unos podataka -->
+        <div class="info podaciDiv">
+            <select name="ime" id="ime">
+                <option value="jasmin">Jasmin Ubiparip</option>
+                <option value="nedim">Nedim Hrustić</option>
+            </select>
+            <select name="dan" id="dan">
+                <option value="pon">Ponedeljak</option>
+                <option value="uto">Utorak</option>
+                <option value="sri">Srijeda</option>
+                <option value="čet">Četvrtak</option>
+                <option value="pet">Petak</option>
+                <option value="sub">Subota</option>
+                <option value="ned">Nedelja</option>
+            </select>
+            <select name="smjena" id="smjena">
+                <option value="prva">08:00-16:00</option>
+                <option value="druga">16:00-00:00</option>
+                <option value="treca">00:00-08:00</option>
+            </select>
+            <button class="snimi">Snimi</button>
+        </div>
+        <div class="info tabelaDiv hidden">
             <div class="description">
                 <label>Opis:</label>
                 <textarea id="opis1" cols="30" rows="5"></textarea>
@@ -34,17 +66,27 @@
                     <label>Kol - S.č.</label>
                     <input id="kol1" class="setKol" type="text">
                 </div>
+            </div> 
+            <div class="divButtons">
+                <button id="button1">GTN - 1</button>
+                <button id="button2">GTN - 2</button>
             </div>
         </div>
-        <div class="divButtons">
-            <button id="button1">GTN - 1</button>
-            <button id="button2">GTN - 2</button>
+        
+        <div class="info napomeneDiv hidden">
+            <textarea id="napomena" cols="30" rows="5"></textarea>
+            <button class="snimi">Snimi</button>
         </div>
+        <div class="info slikeDiv hidden">
+            <input type="file">
+            <button class="snimi">Dodaj</button>
+        </div>
+        <!-- Tabele -->
         <table id="table1">
             <div class="smjenski">
-                <h1 contenteditable="true" class="kojaSmjena">SMJENA I</h1>
+                <h1 contenteditable="true" class="kojaSmjena">SMJENA </h1>
                 <h1>SMJENSKI IZVJEŠTAJ</h1>
-                <h1 class="datum">22.11.2022</h1>
+                <h1 contenteditable="true" class="datum"></h1>
             </div>
             <tr>
                 <th>VRIJEME</th>
@@ -62,22 +104,86 @@
                 <th>Stacionaža čela</th>
             </tr>
         </table>
-        <!--   <section class="addPhoto">
-            <h2 class="naslovDodavanja">Dodaj sliku</h2>
-            <div class="dodaj">
-                <input id="dodajSliku" type="file" accept="image/png, image/jpg">
-                <textarea name="" id="dodajTekst" cols="30" rows="5"></textarea>
-                <button id="buttonImage">Dodaj opis</button>
+        <div contenteditable="true" class="betweenTable"></div>
+        <table>
+            <div class="smjenski eksplozivna">EKSPLOZIVNA SREDSTVA</div>
+            <tr class="sameWidth">
+                <th>DYNEX φ 38</th>
+                <th>DYNEX φ 28</th>
+                <th>AN-FO</th>
+                <th>NON-el det</th>
+                <th>Elektro det</th>
+                <th>Štapin</th>
+            </tr>
+            <tr contenteditable="true" class="yellow">
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+            </tr>
+            <tr contenteditable="true" class="red">
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+            </tr>
+        </table>
+        <div contenteditable="true" class="centarDiv">
+            <div class="slump">SLUMP</div>
+            <div class="same">
+                <div class="gore">Vrijeme</div>
+                <div class="horiz">Kubika</div>
             </div>
-        </section>
-        <article class="lista">
-        </article> -->
-        <div id="buttons">
-            <button id="pdf">Skini PDF</button>
+            <div class="same">
+                <div class="gore"></div>
+                <div></div>
+            </div>
+            <div class="same horis">
+                <div class="gore">Stacionaža</div>
+                <div class="mbDiv">
+                    <div class="horiz mb">M.B.</div>
+                    <div></div>
+                </div>
+            </div>
+            <div class="same"></div>
+        </div>
+        <table>
+            <tr class="sameWidth">
+                <th>Agregat 0-4</th>
+                <th>Agregat 4-8</th>
+                <th>Cement</th>
+                <th>Aditiv</th>
+                <th>Voda</th>
+                <th>Fiber</th>
+            </tr>
+            <tr contenteditable="true" class="sameWidth">
+                <th>kg</th>
+                <th>kg</th>
+                <th>kg</th>
+                <th>I</th>
+                <th>I</th>
+                <th>kg</th>
+            </tr>
+            <tr contenteditable="true" >
+                <th class="sameWhite">0</th>
+                <th class="sameWhite">0</th>
+                <th class="sameWhite">0</th>
+                <th class="sameWhite">0</th>
+                <th class="sameWhite">0</th>
+                <th class="sameWhite">0</th>
+            </tr>
+        </table>
+        <div class="legenda">
+            <h1 class="yellow">ODNOSI SE NA GTN1</h1>
+            <h1 class="red">ODNOSI SE NA GTN2</h1>
         </div>
     </main>
-    <script src="main.js"></script>
-    <script src="html2PDF.js"></script>
+    <script src="js/info.js"></script>
+    <script src="js/main.js"></script>
 </body>
 
 </html>

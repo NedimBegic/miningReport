@@ -1,0 +1,23 @@
+
+.podaciDiv{
+    width: 50%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.tabelaDiv{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.napomeneDiv{
+    display: flex;
+    flex-direction: column;
+}
+
+.slikeDiv{
+    display: flex;
+    flex-direction: column;
+}

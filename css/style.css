@@ -14,7 +14,12 @@ main{
     justify-content: center;
     align-items: center;
 }
-
+.info{
+    margin: 1em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 .info *{
     margin: .2em;
 }
@@ -47,12 +52,46 @@ main{
     display: flex;
 }
 
+textarea{
+    border:1px solid blue;
+    border-radius: 10px;
+}
+
+button{
+    border-radius: 10px;
+    border: 1px solid #0077CC;
+    color: white;
+    background-image: linear-gradient(#42A1EC, #0070C9);
+}
+
 .divButtons{
     width: 10em;
     height: 3em;
     display: flex;
     justify-content: space-between;
     margin-bottom: 1em;
+}
+
+#button1{
+    color: black;
+    border: 1px solid rgb(204, 204, 25);
+    background-image: linear-gradient(yellow,rgb(210, 210, 42));
+    font-weight: bold;
+}
+
+#button2{
+    border: 1px solid rgb(215, 44, 44);
+    background-image: linear-gradient(red,rgb(201, 48, 48));
+    font-weight: bold;
+}
+
+select{
+    border-radius: 4px;
+}
+
+.snimi{
+    width: 50%;
+    background-image: linear-gradient(rgb(48, 200, 48),green);
 }
 /* ----------tabela */
 table, th, td{
@@ -130,7 +169,7 @@ th{
 
 .gore{
     width: 100%;
-    height: 40%;
+    height: 45%;
     border-bottom: 1px solid black;
 }
 td input{
@@ -158,74 +197,111 @@ input[type="time"]::-webkit-calendar-picker-indicator {
     display: none;
 }
 
-/* Section where the photo is added */
-
-.addPhoto{
+/*  last table */
+.eksplozivna{
     display: flex;
-    flex-direction: column;
+    justify-content: center;
     align-items: center;
-    margin: 2em;
-    width: 80%;
+    background-color: #ddd9c4;
 }
 
-.addPhoto *{
-    margin: .3em;
-}
-
-.dodaj{
-    width: 100%;
+.betweenTable{
+    width:100%;
+    height: 2em;
     display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-#dodajSliku{
-    background-color: green;
-    width: 50%;
-}
-
-#dodajTekst{
-    width: 80%;
-}
-
-/* Lista slika sa opisima */
-
-.lista{
-    width: 80%;
-    height: auto;
-    display: flex;
-    flex-direction: column;
-    align-items:center ;
-}
-
-#ovde{
-    width: 80%;
-    height: 50%;
-    
-}
-
-.naslovDodavanja{
-    font-weight: bolder;
-}
-
-.prilogNaslov{
-    font-weight: bolder;
-    margin:.5em;
-}
-
-#prilog{
-    width: 80%;
-    height: auto;
-    display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-#ovdeText{
-    margin:.4em;
+.sameWidth th{
+    width: 10em;
+}
+
+.yellow{
+    background-color: yellow;
+    font-weight: bolder;
+    text-align: center;
+}
+
+.red{
+    background: red;
+    font: bolder;
+    text-align: center;
+    color: white;
+}
+
+.slump{
+    width: 33,2%;
+}
+
+.centarDiv{
+    width: 100%;
+    height: 3em;
+    border: 2px solid black;
+    background-color:#ddd9c4;
+    display: flex;
+    text-align: center;
+    font-weight: bold;
+}
+
+.slump{
+    flex: 2.1;
+    height: 100%;
+    border-right: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.same{
+    flex: 1;
+    border-right: 1px solid black;
+}
+
+.sameWhite{
+    background: #f2f2f2;
+}
+
+.mbDiv{
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    align-items: center;
+}
+.mb{
+    border-right: 1px solid black;
+    height: 100%;
+    width: 50%;
+    text-align: center;
+    vertical-align:text-bottom;
+}
+
+.legenda{
+    position: relative;
+    right: 30%;
+    margin: 1em;
+    
+}
+
+/* napomene */
+#dodajNapomenu{
+    margin: 1em;
 }
 
 .hidden{
     display:none;
+}
+
+@media screen and (min-width: 600px) {
+  table, .operacija, .smjenski, #table1, .centarDiv{
+    width:80%;
+  }
+}
+
+@media print {
+    header{
+        position:fixed;
+        top:0;
+    }
 }
