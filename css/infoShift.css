@@ -1,0 +1,9 @@
+.infoShift{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.infoShift div * {
+    margin-bottom: .3em;
+}

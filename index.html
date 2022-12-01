@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/info.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="/css/infoShift.css">
     <link rel="stylesheet" href="css/notes.css">
 
     <title>Report</title>
@@ -27,25 +28,25 @@
         </section>
         <!-- Unos podataka -->
         <div class="info podaciDiv">
-            <select name="ime" id="ime">
+            <select name="ime" id="imeUlaz">
                 <option value="jasmin">Jasmin Ubiparip</option>
                 <option value="nedim">Nedim Hrustić</option>
             </select>
-            <select name="dan" id="dan">
-                <option value="pon">Ponedeljak</option>
-                <option value="uto">Utorak</option>
-                <option value="sri">Srijeda</option>
-                <option value="čet">Četvrtak</option>
-                <option value="pet">Petak</option>
-                <option value="sub">Subota</option>
-                <option value="ned">Nedelja</option>
+            <select name="dan" id="danUlaz">
+                <option value="Ponedjeljak">Ponedjeljak</option>
+                <option value="Utorak">Utorak</option>
+                <option value="Srijeda">Srijeda</option>
+                <option value="Četvrtak">Četvrtak</option>
+                <option value="Petak">Petak</option>
+                <option value="Subota">Subota</option>
+                <option value="Nedjelja">Nedjelja</option>
             </select>
-            <select name="smjena" id="smjena">
-                <option value="prva">08:00-16:00</option>
-                <option value="druga">16:00-00:00</option>
-                <option value="treca">00:00-08:00</option>
+            <select name="smjena" id="smjenaUlaz">
+                <option value="08:00-16:00">08:00-16:00</option>
+                <option value="16:00-00:00">16:00-00:00</option>
+                <option value="00:00-08:00">00:00-08:00</option>
             </select>
-            <button class="snimi">Dodaj</button>
+            <button id="dodajSmjenu" class="snimi">Dodaj</button>
         </div>
         <div class="info tabelaDiv hidden">
             <div class="description">
@@ -82,6 +83,19 @@
             <input type="file">
             <button class="snimi">Dodaj</button>
         </div>
+        <!-- header div -->
+        <article class="infoShift">
+            <div>
+                <h3>ADRIATIC METALS PLC</h3>
+                <h3>EASTER MINING D.O.O. VAREŠ</h3>
+                <h3>POGON: JAMA "RUPICE"</h3>
+            </div>
+            <div>
+                <h3 id="datum">DATUM: </h3>
+                <h3 id="danIzlaz">DAN:</h3>
+                <h3 id="smjenaIzlaz">SMJENA:</h3>
+            </div>
+        </article>
         <h2 class="smjenskiIzvjestaj">Smjenski izvještaj</h2>
         <!-- Tabele -->
         <table id="table1">
@@ -208,6 +222,7 @@
     </main>
     <script src="js/info.js"></script>
     <script src="js/main.js"></script>
+    <script src="/js/infoShift.js"></script>
     <script src="js/notes.js"></script>
 </body>
 

@@ -1,19 +1,11 @@
-// todays date
-var today = new Date();
-var dd = String(today.getDate()).padStart(2, '0');
-var mm = String(today.getMonth() + 1).padStart(2, '0'); 
-var yyyy = today.getFullYear();
 
-today = mm + '.' + dd + '.' + yyyy;
-// putting date and shift in table
-/* document.querySelector('.datum').textContent = today;
- */let smjena = document.getElementById('smjena').value;
+/*  let smjena = document.getElementById('smjena').value;
 let shift = "";
 if(smjena == "prva"){
     shift = "I";
 }else if (smjena == "druga"){
     shift = "II"
-}
+} */
 /* document.querySelector('.kojaSmjena').textContent += shift;
  */// the buttons for different info
 let podaci = document.getElementById('podaci');

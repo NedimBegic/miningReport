@@ -20,5 +20,6 @@ dodajNapomenu.addEventListener('click', () => {
     listaNapomena.innerHTML += `
         <li class="note">${napomenaArr[napomenaArr.length-1]}</li>
     `
+    document.getElementById('napomena').value = "";
 
 })
