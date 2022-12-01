@@ -82,9 +82,9 @@
             <button id="dodajNapomenu" class="snimi">Dodaj</button>
         </div>
         <div class="info slikeDiv hidden">
-            <input type="file">
-            <input type="text" placeholder="Napomena za sliku">
-            <button class="snimi">Dodaj</button>
+            <input id="image" type="file">
+            <input id="noteImage" type="text" placeholder="Napomena za sliku">
+            <button id="addImage" class="snimi">Dodaj</button>
         </div>
         <!-- header div -->
         <article class="infoShift">
@@ -217,9 +217,20 @@
             <h1 class="yellow">ODNOSI SE NA GTN1</h1>
             <h1 class="red">ODNOSI SE NA GTN2</h1>
         </div>
+        <div class="potpis">
+            <div class="potpisSve">
+                <h3>Smjenski inženjer</h3>
+                <div class="linija"></div>
+                <div class="ing">
+                    <h3><h3 id="imeIng"></h3>&nbsp BA.inž.rud.</h3>
+                </div>
+            </div>
+            
+        </div>
         <article class="listaNapomena">
             <div class="divNapomene">Napomene:</div>
         </article>
+        <article class="listaSlika"></article>
     </main>
     <script src="js/info.js"></script>
     <script src="js/main.js"></script>

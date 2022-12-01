@@ -107,10 +107,10 @@ button2.addEventListener('click', () => {
 /* -----------------------------Add image section-----------*/
 
 // unos slike i teksta
-/* let image = document.getElementById('dodajSliku');
+let image = document.getElementById('image');
 let urlOfImage = '';
 
-let buttonImage = document.getElementById('buttonImage');
+let buttonImage = document.getElementById('addImage');
 
 image.addEventListener('change', (e) => {
     const reader = new FileReader();
@@ -120,15 +120,23 @@ image.addEventListener('change', (e) => {
         urlOfImage = reader.result;
     });
     reader.readAsDataURL(file)
+});
+
+buttonImage.addEventListener('click', () => {
+    let noteImage = document.getElementById('noteImage').value;
+    // create element and render it
+    let img1 = document.createElement('img');
+    img1.classList.add('images');
+    img1.src = urlOfImage;
+    let note = document.createElement('p');
+    note.classList.add('note');
+    note.textContent = "*" + noteImage;
+    // call list article and render children
+    let listaSlika = document.querySelector('.listaSlika');
+    listaSlika.appendChild(img1);
+    listaSlika.appendChild(note);
+
+    document.getElementById('noteImage').value = "";
 })
- */
+ 
 
-
-/* 
-napravit dinamicno dodavanje napomena
-napravit mogucnost dodavanje slika
-napravit header and footer za svaku stranicu
-optimizovat print layout
-dodat dinamican unos datuma na tabeli i footeru
-dodat ime inzinjera i smjene
-*/
