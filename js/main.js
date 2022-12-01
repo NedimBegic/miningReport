@@ -151,5 +151,10 @@ document.getElementById('noDisplay').addEventListener('click', () => {
     document.getElementById('buttonDiv').classList.add('hidden');
     document.getElementById('clear').classList.add('hidden');
     document.getElementById('noDisplay').classList.add('hidden');
+    document.querySelector('.podaciDiv').classList.add('hidden');
+    document.querySelector('.tabelaDiv').classList.add('hidden');
+    document.querySelector('.napomeneDiv').classList.add('hidden');
+    document.querySelector('.slikeDiv').classList.add('hidden');
+    document.querySelector('.aktivPrint').classList.toggle('hidden');
 
 })

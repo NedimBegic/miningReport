@@ -496,20 +496,4 @@ input[type="time"]::-webkit-calendar-picker-indicator {
 
 
 
-@media print {
-    header {
-        position: fixed;
-        top: 0;
-    }
-    .listaNapomena{
-        page-break-before: always;
-    }
-
-    .images{
-        display: block;
-        page-break-after:always;
-    }
-      
-}
-
 
