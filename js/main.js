@@ -140,3 +140,16 @@ buttonImage.addEventListener('click', () => {
 })
  
 
+// clear localStorage
+document.getElementById('clear').addEventListener('click', () => {
+    localStorage.clear();
+})
+
+// hide info divs befor printing
+document.getElementById('noDisplay').addEventListener('click', () => {
+    document.querySelector('.info').classList.add('hidden');
+    document.getElementById('buttonDiv').classList.add('hidden');
+    document.getElementById('clear').classList.add('hidden');
+    document.getElementById('noDisplay').classList.add('hidden');
+
+})
