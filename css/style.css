@@ -3,8 +3,8 @@
 }
 
 .logo {
-    width: 90%;
-    height: 8em;
+    width: 70%;
+    height: 5em;
     position: relative;
     left: 8%;
 }
@@ -422,10 +422,23 @@ input[type="time"]::-webkit-calendar-picker-indicator {
     .smjenski,
     #table1,
     .centarDiv,
-    .slump {
+    .slump,
+    .betweenTable
+    header {
         width: 80%;
     }
+
+    .logo{
+        width: 90%;
+        height: 6em;
+    }
+    header{
+        width: 100%;
+    }
 }
+
+
+
 
 @media print {
     header {
