@@ -33,29 +33,29 @@ header{
     display: block;
     page-break-inside: avoid;
     position: absolute;
-    top: 76em;
+    top: 73em;
 }
 
 .legenda{
     position: absolute;
     width: 10em;
-    top: 98em;
+    top: 95em;
     left:0em;
 }
 
 .potpis{
     position: absolute;
-    top: 116em;
+    top: 115em;
 }
 
 .listaNapomena{
     position: absolute;
-    top: 124em;
+    top: 125em;
 }
 
 .listaSlika{
     position: absolute;
-    top: 186em;
+    top: 187em;
 }
 
 .images{

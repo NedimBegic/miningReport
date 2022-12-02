@@ -481,6 +481,11 @@ input[type="time"]::-webkit-calendar-picker-indicator {
     width: 6em;
 }
 
+.listaNapomena{
+    margin-top: .7em;
+
+}
+
 .clearDisplay{
     margin: 1em;
     width: 100%;
