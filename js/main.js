@@ -130,6 +130,7 @@ buttonImage.addEventListener('click', () => {
     img1.src = urlOfImage;
     let note = document.createElement('p');
     note.classList.add('note');
+    note.classList.add('picNote');
     note.textContent = "*" + noteImage;
     // call list article and render children
     let listaSlika = document.querySelector('.listaSlika');
@@ -156,5 +157,10 @@ document.getElementById('noDisplay').addEventListener('click', () => {
     document.querySelector('.napomeneDiv').classList.add('hidden');
     document.querySelector('.slikeDiv').classList.add('hidden');
     document.querySelector('.aktivPrint').classList.toggle('hidden');
+    document.querySelector('.napZaTabelu').classList.add('hidden');
 
+})
+
+document.getElementById('print').addEventListener('click', () => {
+    print();
 })

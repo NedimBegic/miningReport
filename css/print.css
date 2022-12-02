@@ -1,0 +1,56 @@
+header{
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+}
+.logo{
+    left: 0;
+}
+
+.infoShift{
+    margin-top: .8em;
+}
+
+.tablaEks{
+    display: block;
+    page-break-inside: avoid;
+    position: absolute;
+    top: 80em;
+}
+
+.legenda{
+    display: block;
+    position: relative;
+    top: 52em;
+}
+
+.potpis{
+    position: relative;
+    top: 65em;
+}
+
+.listaNapomena{
+    position: relative;
+    top: 70em;
+}
+
+.listaSlika{
+    position: relative;
+    top: 110em;
+}
+
+.images{
+    margin-top: 7em;
+    display: block;
+    page-break-inside: avoid;
+
+}
+
+.picNote{
+    margin-bottom: 13em;
+}
+
+#table1, #table2, .betweenTable{
+    margin-bottom: 0em;   
+}
+

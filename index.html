@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="/css/infoShift.css">
     <link rel="stylesheet" href="css/notes.css">
+    <link rel="stylesheet" media="print" href="css/print.css">
 
     <title>Report</title>
 </head>
@@ -99,6 +100,8 @@
             </div>
         </article>
         <h2 class="smjenskiIzvjestaj">Smjenski izvještaj</h2>
+        <p class="napZaTabelu">* Unijeti stac. čela i ventilacije i napomenu ispod GTN
+            tabela prije skidanja</p>
         <!-- Tabele -->
         <table id="table1">
             <tr class="bigger">
@@ -111,7 +114,6 @@
                         <div class="line"></div>
                         <div contenteditable="true"> Stac. ventilacija: </div>
                     </div>
-
                 </th>
                 <th class="noBorderBotton">Utrošak</th>
             </tr>
@@ -140,78 +142,82 @@
                 <th class="noBorderTop smaller wordBreak">materijala</th>
             </tr>
         </table>
-        <div contenteditable="true" class="betweenTable"></div>
+        <div contenteditable="true" class="betweenTable">
+            <li></li>
+        </div>
         <!-- tabela eks -->
-        <table id="eks">
-            <div class="smjenski eksplozivna">EKSPLOZIVNA SREDSTVA</div>
-            <tr class="sameWidth">
-                <th>DYNEX φ 38</th>
-                <th>DYNEX φ 28</th>
-                <th>AN-FO</th>
-                <th>NON-el det</th>
-                <th>Elektro det</th>
-                <th>Štapin</th>
-            </tr>
-            <tr contenteditable="true" class="yellow">
-                <td>0</td>
-                <td>0</td>
-                <td>0</td>
-                <td>0</td>
-                <td>0</td>
-                <td>0</td>
-            </tr>
-            <tr contenteditable="true" class="red">
-                <td>0</td>
-                <td>0</td>
-                <td>0</td>
-                <td>0</td>
-                <td>0</td>
-                <td>0</td>
-            </tr>
-        </table>
-        <table>
-            <div class="slump">SLUMP TEST</div>
-            <tr contenteditable="true">
-                <th class="slumpDiv">Iznos</th>
-                <th class="slumpDiv">Vrijeme</th>
-                <th class="slumpDiv">Kubik</th>
-                <th class="slumpDiv">Od:</th>
-                <th class="slumpDiv">Do:</th>
-                <th class="slumpDiv">Kontrola</th>
-            </tr>
-            <tr contenteditable="true">
-                <th class="slumpDiv"></th>
-                <th class="slumpDiv"></th>
-                <th class="slumpDiv"></th>
-                <th class="slumpDiv"></th>
-                <th class="slumpDiv"></th>
-                <th class="slumpDiv"></th>
-            </tr>
-            <tr class="sameWidth">
-                <th>Agregat 0-4</th>
-                <th>Agregat 4-8</th>
-                <th>Cement</th>
-                <th>Aditiv</th>
-                <th>Voda</th>
-                <th>Fiber</th>
-            </tr>
-            <tr contenteditable="true" class="sameWidth">
-                <th>kg</th>
-                <th>kg</th>
-                <th>kg</th>
-                <th>I</th>
-                <th>I</th>
-                <th>kg</th>
-            </tr>
-            <tr contenteditable="true">
-                <th class="sameWhite">0</th>
-                <th class="sameWhite">0</th>
-                <th class="sameWhite">0</th>
-                <th class="sameWhite">0</th>
-                <th class="sameWhite">0</th>
-                <th class="sameWhite">0</th>
-            </tr>
-        </table>
+        <div class="tablaEks">
+            <table id="eks">
+                <div class="smjenski eksplozivna">EKSPLOZIVNA SREDSTVA</div>
+                <tr class="sameWidth">
+                    <th>DYNEX φ 38</th>
+                    <th>DYNEX φ 28</th>
+                    <th>AN-FO</th>
+                    <th>NON-el det</th>
+                    <th>Elektro det</th>
+                    <th>Štapin</th>
+                </tr>
+                <tr contenteditable="true" class="yellow">
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                </tr>
+                <tr contenteditable="true" class="red">
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                </tr>
+            </table>
+            <table>
+                <div class="slump">SLUMP TEST</div>
+                <tr contenteditable="true">
+                    <th class="slumpDiv">Iznos</th>
+                    <th class="slumpDiv">Vrijeme</th>
+                    <th class="slumpDiv">Kubik</th>
+                    <th class="slumpDiv">Od:</th>
+                    <th class="slumpDiv">Do:</th>
+                    <th class="slumpDiv">Kontrola</th>
+                </tr>
+                <tr contenteditable="true">
+                    <th class="slumpDiv"></th>
+                    <th class="slumpDiv"></th>
+                    <th class="slumpDiv"></th>
+                    <th class="slumpDiv"></th>
+                    <th class="slumpDiv"></th>
+                    <th class="slumpDiv"></th>
+                </tr>
+                <tr class="sameWidth">
+                    <th>Agregat 0-4</th>
+                    <th>Agregat 4-8</th>
+                    <th>Cement</th>
+                    <th>Aditiv</th>
+                    <th>Voda</th>
+                    <th>Fiber</th>
+                </tr>
+                <tr contenteditable="true" class="sameWidth">
+                    <th>kg</th>
+                    <th>kg</th>
+                    <th>kg</th>
+                    <th>I</th>
+                    <th>I</th>
+                    <th>kg</th>
+                </tr>
+                <tr contenteditable="true">
+                    <th class="sameWhite">0</th>
+                    <th class="sameWhite">0</th>
+                    <th class="sameWhite">0</th>
+                    <th class="sameWhite">0</th>
+                    <th class="sameWhite">0</th>
+                    <th class="sameWhite">0</th>
+                </tr>
+            </table>
+        </div>
         <div class="legenda">
             <h1 class="yellow">ODNOSI SE NA GTN1</h1>
             <h1 class="red">ODNOSI SE NA GTN2</h1>
@@ -234,6 +240,7 @@
             <button id="clear">Briši memoriju</button>
             <button id="noDisplay">Ukloni nepotrebno</button>
         </div>
+        <button id="print">Print</button>
     </main>
     <script src="js/info.js"></script>
     <script src="js/main.js"></script>

@@ -275,6 +275,13 @@ table {
     border-bottom: 1px solid black;
 }
 
+.tablaEks{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 td input {
     display: flex;
     flex-direction: column;
@@ -329,10 +336,16 @@ input[type="time"]::-webkit-calendar-picker-indicator {
 
 .betweenTable {
     width: 100%;
-    height: 2em;
+    height: auto;
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
+    text-align: left;
+}
+
+.betweenTable li{
+    margin: .1em;
 }
 
 .sameWidth th {
@@ -379,6 +392,11 @@ input[type="time"]::-webkit-calendar-picker-indicator {
     font-weight: bold;
 }
 
+.napZaTabelu{
+    color: red;
+    margin-bottom: .2em;
+    text-align: center;
+}
 .same {
     flex: 1;
     border-right: 1px solid black;
@@ -478,7 +496,6 @@ input[type="time"]::-webkit-calendar-picker-indicator {
     #table1,
     .centarDiv,
     .slump,
-    .betweenTable
     header,
     .potpis {
         width: 80%;
@@ -490,6 +507,9 @@ input[type="time"]::-webkit-calendar-picker-indicator {
     }
     header{
         width: 100%;
+    }
+    .betweenTable{
+        width: 70%;
     }
 }
 
