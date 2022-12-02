@@ -477,6 +477,10 @@ input[type="time"]::-webkit-calendar-picker-indicator {
     background-image: linear-gradient(red,rgb(186, 35, 35));
 }
 
+#print{
+    width: 6em;
+}
+
 .clearDisplay{
     margin: 1em;
     width: 100%;
@@ -510,6 +514,23 @@ input[type="time"]::-webkit-calendar-picker-indicator {
     }
     .betweenTable{
         width: 70%;
+    }
+   
+    .aktivPrint{
+        display:block;
+
+    }
+}
+
+
+@media screen and (600 < width < 1500) {
+    .infoShift{
+        display: flex;
+        justify-content: space-evenly;
+        width: 50%;
+    }
+    .aktivPrint{
+        display:block
     }
 }
 

@@ -146,20 +146,6 @@ document.getElementById('clear').addEventListener('click', () => {
     localStorage.clear();
 })
 
-// hide info divs befor printing
-document.getElementById('noDisplay').addEventListener('click', () => {
-    document.querySelector('.info').classList.add('hidden');
-    document.getElementById('buttonDiv').classList.add('hidden');
-    document.getElementById('clear').classList.add('hidden');
-    document.getElementById('noDisplay').classList.add('hidden');
-    document.querySelector('.podaciDiv').classList.add('hidden');
-    document.querySelector('.tabelaDiv').classList.add('hidden');
-    document.querySelector('.napomeneDiv').classList.add('hidden');
-    document.querySelector('.slikeDiv').classList.add('hidden');
-    document.querySelector('.aktivPrint').classList.toggle('hidden');
-    document.querySelector('.napZaTabelu').classList.add('hidden');
-
-})
 
 document.getElementById('print').addEventListener('click', () => {
     print();

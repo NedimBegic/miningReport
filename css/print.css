@@ -1,3 +1,21 @@
+.noDisplay,
+.info,
+#buttonDiv,
+#clear,
+#noDisplay,
+.podaciDiv,
+.tabelaDiv,
+.napomeneDiv,
+.slikeDiv,
+.napZaTabelu,
+#print{
+    display:none;
+}
+
+.aktivPrint{
+    display:block
+}
+
 header{
     width: 100%;
     display: flex;
@@ -15,39 +33,40 @@ header{
     display: block;
     page-break-inside: avoid;
     position: absolute;
-    top: 80em;
+    top: 76em;
 }
 
 .legenda{
-    display: block;
-    position: relative;
-    top: 52em;
+    position: absolute;
+    width: 10em;
+    top: 98em;
+    left:0em;
 }
 
 .potpis{
-    position: relative;
-    top: 65em;
+    position: absolute;
+    top: 116em;
 }
 
 .listaNapomena{
-    position: relative;
-    top: 70em;
+    position: absolute;
+    top: 124em;
 }
 
 .listaSlika{
-    position: relative;
-    top: 110em;
+    position: absolute;
+    top: 186em;
 }
 
 .images{
-    margin-top: 7em;
+    margin-top: 6em;
     display: block;
     page-break-inside: avoid;
 
 }
 
 .picNote{
-    margin-bottom: 13em;
+    margin-bottom: 12em;
 }
 
 #table1, #table2, .betweenTable{
