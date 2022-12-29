@@ -14,4 +14,4 @@ In this projext I learned using the data from localStorage, making a responsive 
 
 You can visit the page here : https://report123.netlify.app/
 
-<img src="https://i.ibb.co/7N5YYZs/report.png" width=500 height=700 >
+<img src="https://i.ibb.co/09bcd4D/report.png" width=500 height=700 >
