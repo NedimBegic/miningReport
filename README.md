@@ -1,6 +1,6 @@
 # miningReport
 
-This is a page for Mining engeneers in Adriatic Metals. They wanted a posibility of making report and storing there information in the browser so they don't loose it
+This is a page for Mining engeneers in XXXX company. They wanted a posibility of making report and storing there information in the browser so they don't loose it
 when they refresh.
 
 In this projext I learned using the data from localStorage, making a responsive PDF file on click, making dinamical tables.
