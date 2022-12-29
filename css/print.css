@@ -49,13 +49,15 @@ header{
 }
 
 .listaNapomena{
+    page-break-before: always;
     position: absolute;
-    top: 125em;
+    top: 130em;
 }
 
 .listaSlika{
+    page-break-before: always;
     position: absolute;
-    top: 187em;
+    top: 195em;
 }
 
 .images{
